@@ -12,6 +12,7 @@ html {
 body {
     display: grid;
     grid-template: auto 1fr / 100%;
+    overflow: hidden;
 
     padding-top: 6em;
 

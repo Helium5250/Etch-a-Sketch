@@ -16,6 +16,7 @@ body {
   -ms-grid-rows: auto 1fr;
   -ms-grid-columns: 100%;
       grid-template: auto 1fr / 100%;
+  overflow: hidden;
   padding-top: 6em;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 100%;
