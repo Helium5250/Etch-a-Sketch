@@ -7,7 +7,7 @@
 
 body,
 html {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 body {
@@ -16,11 +16,15 @@ body {
   -ms-grid-rows: auto 1fr;
   -ms-grid-columns: 100%;
       grid-template: auto 1fr / 100%;
-  padding: 10%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 6em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 100%;
   line-height: 2;
-  background-color: darkgray;
+  background-color: #e0dbd1;
+}
+
+* {
+  font-family: inherit;
 }
 
 header {
@@ -47,7 +51,7 @@ main {
           align-items: center;
 }
 
-#btn-div {
+.btn-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,8 +71,40 @@ main {
   padding: 0.5em 1em;
   margin: 0 1em;
   border: none;
-  background-color: aquamarine;
+  border-radius: 6px;
+  background-color: #c6c4b9;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #d1cfc7;
+}
+
+.btn:active {
+  background-color: #c6c4b9;
+}
+
+#color-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3em 1em;
+  cursor: default;
+}
+
+#color-div label {
+  margin-right: 1em;
+}
+
+#color-div input {
+  cursor: pointer;
+  border: none;
 }
 
 #canvas {
@@ -84,5 +120,15 @@ main {
 
 #canvas div {
   background-color: white;
+}
+
+#profile {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0.2em;
+  text-decoration: none;
+  color: black;
+  padding: 0.1em 0.6em;
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,20 +6,24 @@
 
 body,
 html {
-    min-height: 100vh;
+    height: 100vh;
 }
 
 body {
     display: grid;
     grid-template: auto 1fr / 100%;
 
-    padding: 10%;
+    padding-top: 6em;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 100%;
     line-height: 2;
 
-    background-color: darkgray;
+    background-color: hsl(38, 20, 85);
+}
+
+* {
+    font-family: inherit;
 }
 
 header {
@@ -37,7 +41,7 @@ main {
     align-items: center;
 }
 
-#btn-div {
+.btn-div {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -48,8 +52,35 @@ main {
     padding: 0.5em 1em;
     margin: 0 1em;
     border: none;
-    background-color: aquamarine;
+    border-radius: 6px;
+    background-color: hsl(50, 10, 75);
     cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsl(50, 10, 80);
+}
+
+.btn:active {
+    background-color: hsl(50, 10, 75);
+}
+
+#color-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.3em 1em;
+    cursor: default;
+
+    label {
+        margin-right: 1em;
+    }
+    
+    input {
+        cursor: pointer;
+        border: none;
+    }
 }
 
 #canvas {
@@ -67,4 +98,14 @@ main {
     div {
         background-color: white;
     }
+}
+
+#profile {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0.2em;
+    text-decoration: none;
+    color: black;
+    padding: 0.1em 0.6em;
 }

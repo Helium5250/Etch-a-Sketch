@@ -40,7 +40,7 @@ penBtn.onclick = () => {
 
 sizeBtn.onclick = () => {
     let size = prompt("Enter size:");
-    if (!isNaN(size)) {
+    if (size && !isNaN(size)) {
         createGrid(size);
         console.log(typeof parseInt(size));
         console.log(parseInt(size));

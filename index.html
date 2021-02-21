@@ -14,16 +14,23 @@
     </header>
 
     <main>
-        <div id="btn-div">
+        <div class="btn-div">
             <button class="btn" id="clear">Clear</button>
-            <button class="btn" id="size">Size</button>
             <button class="btn" id="eraser">Eraser</button>
             <button class="btn" id="pen">Pen</button>
+            <button class="btn" id="size">Size</button>
             <button class="btn" id="random">Random</button>
-            <input type="color" class="colorPicker" id="color">
         </div>
         <div id="canvas"></div>
+        <div class="btn-div">
+            <div class="btn" id="color-div">
+                <label for="color">Color Picker</label>
+                <input type="color" id="color">
+            </div>
+        </div>
     </main>
+
+    <a class="btn" id="profile" href="https://github.com/Helium5250">@</a>
 
     <script src="./script.js"></script>
 </body>
