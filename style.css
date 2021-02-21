@@ -47,14 +47,27 @@ main {
           align-items: center;
 }
 
-button#size {
+#btn-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn {
   padding: 0.5em 1em;
+  margin: 0 1em;
   border: none;
   background-color: aquamarine;
   cursor: pointer;
 }
 
-div#canvas {
+#canvas {
   display: -ms-grid;
   display: grid;
   gap: 1px;
@@ -65,7 +78,7 @@ div#canvas {
   border: 1px solid black;
 }
 
-div#canvas div {
+#canvas div {
   background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

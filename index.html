@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
-    
+
     <title>Etch a Sketch</title>
 </head>
+
 <body>
     <header>
         <h1>Etch a Sketch</h1>
     </header>
 
     <main>
-        <button id="size">Size</button>
+        <div id="btn-div">
+            <button class="btn" id="clear">Clear</button>
+            <button class="btn" id="size">Size</button>
+            <button class="btn" id="eraser">Eraser</button>
+            <input type="color" class="colorPicker" id="color">Color</>
+        </div>
         <div id="canvas"></div>
     </main>
-    
+
     <script src="./script.js"></script>
 </body>
+
 </html>

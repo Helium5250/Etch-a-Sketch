@@ -37,14 +37,21 @@ main {
     align-items: center;
 }
 
-button#size {
+#btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
     padding: 0.5em 1em;
+    margin: 0 1em;
     border: none;
     background-color: aquamarine;
     cursor: pointer;
 }
 
-div#canvas {
+#canvas {
     display: grid;
     gap: 1px;
 
