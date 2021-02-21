@@ -1,15 +1,20 @@
-let canvas = document.querySelector('#canvas');
-let clearBtn = document.querySelector('#clear');
-let sizeBtn = document.querySelector('#size');
-let eraserBtn = document.querySelector('#eraser');
-let colorBtn = document.querySelector('#color');
+const canvas = document.querySelector('#canvas');
+const clearBtn = document.querySelector('#clear');
+const sizeBtn = document.querySelector('#size');
+const eraserBtn = document.querySelector('#eraser');
+const penBtn = document.querySelector('#pen');
+const randomBtn = document.querySelector('#random');
+const colorBtn = document.querySelector('#color');
 
 const clear = toHSLA(0, 100, 100);
-let color = toHSLA(0, 100, 0);
+let ink = toHSLA(0, 100, 0);
+let color = ink;
 
-function toHSLA(hue, saturation, lightness = 100, alpha = 1.0) {
-    return "hsla(" + hue + "," + saturation + "%," + lightness + "%," + alpha + ")"
+function toHSLA(hue, saturation, lightness = 50, alpha = 1.0) {
+    return "hsla(" + hue + "," + saturation + "%," + lightness + "%," + alpha + ")";
 }
+
+const randRange = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
 clearBtn.onclick = () => {
     for (square of canvas.childNodes) {
@@ -20,8 +25,18 @@ clearBtn.onclick = () => {
 eraserBtn.onclick = () => color = clear;
 
 colorBtn.addEventListener("input", () => {
-    color = colorBtn.value;
+    ink = colorBtn.value;
+    color = ink;
 });
+
+randomBtn.onclick = () => {
+    ink = toHSLA(randRange(0, 361), randRange(0, 101));
+    color = ink;
+};
+
+penBtn.onclick = () => {
+    color = ink;
+};
 
 sizeBtn.onclick = () => {
     let size = prompt("Enter size:");
