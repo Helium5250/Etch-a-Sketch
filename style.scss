@@ -37,14 +37,14 @@ main {
     align-items: center;
 }
 
-button {
+button#size {
     padding: 0.5em 1em;
     border: none;
     background-color: aquamarine;
     cursor: pointer;
 }
 
-#canvas {
+div#canvas {
     display: grid;
     gap: 1px;
 

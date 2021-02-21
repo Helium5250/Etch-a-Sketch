@@ -47,14 +47,14 @@ main {
           align-items: center;
 }
 
-button {
+button#size {
   padding: 0.5em 1em;
   border: none;
   background-color: aquamarine;
   cursor: pointer;
 }
 
-#canvas {
+div#canvas {
   display: -ms-grid;
   display: grid;
   gap: 1px;
@@ -65,7 +65,7 @@ button {
   border: 1px solid black;
 }
 
-#canvas div {
+div#canvas div {
   background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
