@@ -23,6 +23,10 @@ body {
   background-color: darkgray;
 }
 
+header {
+  margin: 2em 0;
+}
+
 h1 {
   text-align: center;
 }
@@ -35,9 +39,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -51,17 +55,17 @@ button {
 }
 
 #canvas {
-  position: absolute;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1px;
+  margin: 2em 0;
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  border: 1px solid black;
 }
 
 #canvas div {
-  background-color: deepPink;
-  padding: 20px;
-  color: #fff;
-  border: 1px solid #fff;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
